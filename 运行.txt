@@ -1,0 +1,17 @@
+
+-------------
+PM> update-database
+More than one DbContext was found. Specify which one to use. Use the '-Context' parameter for PowerShell 
+commands and the '--context' parameter for dotnet commands.
+
+
+-------------
+update-database -Context HeavyContext
+
+update-database -Context ApplicationDbContext
+
+
+--net core启动报错Unable to configure HTTPS endpoint. No server certificate was specified
+
+在cmd里边运行下就会提示你安装证书，安装成功后就可以成功启动了
+dotnet dev-certs https --trust
